@@ -5,6 +5,8 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { BackButton } from "../components/BackButton";
 import { Input } from "../components/Input";
+import { TextArea } from "../components/TextArea";
+
 
 export function New() {
   return(
@@ -36,29 +38,7 @@ export function New() {
             </label>
 
             <Input label="Nome" type="text" id="name" placeholder="Ex: Salada Ceasar" />
-            
-            {/* <Select.Root>
-              <Select.Trigger aria-label="category" className="flex items-center justify-center gap-2 border-2 rounded-md mt-9 p-2 relative">
-                <Select.Value placeholder="Categoria" />
-                <Select.Icon>
-                  <CaretDown size={24} weight="regular" />
-                </Select.Icon>
-              </Select.Trigger>
-              <Select.Portal>
-                <Select.Content>
-                  <Select.ScrollUpButton className="flex items-center justify-center text-gray-700" >
-                    <CaretUp size={24} weight="regular" />
-                  </Select.ScrollUpButton>
-                  <Select.Viewport className="bg-white p-2">
-                    <Select.Group>
-                      <Select.Item className="text-white text-sm font-normal bg-red-500" value="main">Prato Principal</Select.Item>
-                      <Select.Item className="text-white text-sm font-normal bg-red-500" value="dessert">Sobremesa</Select.Item>
-                      <Select.Item className="text-white text-sm font-normal bg-red-500" value="drink">Bebida</Select.Item>
-                    </Select.Group>
-                  </Select.Viewport>
-                </Select.Content>
-              </Select.Portal>
-            </Select.Root> */}
+             
             <Select.Root>
               <Select.Trigger aria-label="category" className="flex items-center justify-center gap-2 border-2 rounded-md mt-8 p-2 relative">
                   <Select.Value placeholder="Categoria" />
@@ -102,6 +82,10 @@ export function New() {
           <div className="flex items-center gap-8 mt-8">
             <Input label="Ingredientes" type="text" id="ingredients" placeholder="Adicionar" />
             <Input label="Preço" type="text" id="price" placeholder="R$ 0,00" />
+          </div>
+
+          <div className="mt-8">
+            <TextArea id="description" label="Descrição" placeholder="Fale brevemente sobre o prato, seus ingredientes e composição" />
           </div>
         </form>
         

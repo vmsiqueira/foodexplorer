@@ -1,8 +1,8 @@
-import { New } from "./pages/New"
+import { Cart } from "./pages/Cart"
 
 export function App() {
  return (
-  <New />
+  <Cart />
  )
 }
 
